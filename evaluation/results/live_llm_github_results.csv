@@ -1,0 +1,244 @@
+case_id,pitcher,batter,balls,strikes,question,provider,model,approach,latency_ms,answer,groundedness,actionability,uncertainty_awareness,evidence_use,judge_rationale,mean_quality_score
+1,Demo Ace,Demo Hitter Alpha,0,2,Build a pre-game attack plan and explain the evidence and limitations.,github,openai/gpt-4o-mini,direct_llm,5059.5,"### Decision Brief: Pre-Game Attack Plan for Demo Ace vs. Demo Hitter Alpha
+
+**Plan A: Focus on Breaking Balls**
+- **Strategy**: Utilize breaking balls (curveballs or sliders) to exploit Demo Hitter Alpha's potential weaknesses against off-speed pitches, especially with an 0-2 count where the batter may be more defensive.
+- **Rationale**: Breaking balls can induce swings and misses or weak contact, particularly when the batter is behind in the count.
+
+**Plan B: High Fastballs**
+- **Strategy**: If breaking balls are not effective, shift to high fastballs to challenge Demo Hitter Alpha's ability to catch up to velocity.
+- **Rationale**: A high fastball can be difficult for batters to handle, especially when they are expecting off-speed pitches.
+
+**Avoid: Over-reliance on Fastballs in the Zone**
+- **Reason**: Given the 0-2 count, Demo Hitter Alpha may be more likely to protect the plate. Throwing fastballs in the strike zone could lead to solid contact if the batter adjusts.
+
+### Evidence Strength
+- **Strength**: The strategy is based on general trends observed in baseball where batters tend to struggle with breaking balls when behind in the count. High fastballs can also be effective against batters who are geared up for off-speed pitches.
+  
+### Limitations
+- **Limitations**: Without specific data on Demo Hitter Alpha's performance against breaking balls or fastballs, the effectiveness of these strategies remains uncertain. Additionally, the pitcher's command and the batter's recent form are not accounted for, which could significantly influence the outcome. 
+
+### Conclusion
+The proposed plans leverage common strategic insights but should be adjusted based on real-time observations and the specific context of the game.",2,3,4,2,"{'groundedness': 'The answer introduces breaking balls and high fastballs without supporting evidence from the provided data, which focuses solely on fastballs. This leads to a lower score for groundedness.', 'actionability': 'The plans are actionable but lack specificity regarding the evidence provided, making them less useful in a decision-support context.', 'uncertainty_awareness': 'The answer acknowledges limitations and uncertainty regarding the effectiveness of strategies, which is a positive aspect.', 'evidence_use': 'The candidate does not explicitly cite the evidence package, particularly the specific metrics related to fastballs, which detracts from the score.'}",2.75
+1,Demo Ace,Demo Hitter Alpha,0,2,Build a pre-game attack plan and explain the evidence and limitations.,github,openai/gpt-4o-mini,rag_llm,4797.99,"### Decision Brief: Pre-Game Attack Plan
+
+**Plan A: Target Opponent's Weaknesses**  
+- **Strategy**: Focus on exploiting the opposing pitcher's known weaknesses, particularly in their pitch selection and command. Utilize data on their performance against similar hitters and in comparable game situations.
+- **Execution**: Prepare hitters to adjust their approach based on the pitcher's tendencies, emphasizing patience at the plate and situational awareness.
+
+**Plan B: Defensive Alignment Adjustments**  
+- **Strategy**: Adjust defensive alignments based on the opposing team's hitting patterns and the specific batter's spray chart. 
+- **Execution**: Shift infielders and outfielders to optimize positioning against likely batted ball trajectories.
+
+**Avoid: Over-reliance on Historical Data**  
+- **Rationale**: While historical performance data can provide insights, it may not account for recent changes in player form, injuries, or other situational factors. Avoid making decisions solely based on outdated statistics.
+
+### Evidence Strength
+- **Strength**: Moderate. The evidence is based on historical performance data and observed trends in player matchups. However, the effectiveness of strategies can vary based on real-time conditions and player adjustments.
+- **Limitations**: The analysis is limited by the sample size of comparable matchups, recency of data, and the dynamic nature of player performance. Without sufficient recent data (less than 15 comparable matchups), confidence in the predictions decreases.
+
+### Conclusion
+This pre-game attack plan is designed to leverage observed data while remaining adaptable to in-game developments. Continuous monitoring and adjustments based on real-time performance will be crucial for maximizing effectiveness.",4,4,5,3,"{'groundedness': ""The answer is mostly grounded in the evidence provided, discussing strategies based on the pitcher's weaknesses and acknowledging the limitations of historical data. However, it could have referenced specific metrics from the evidence package more directly."", 'actionability': 'The plans outlined are actionable and provide clear strategies for both offensive and defensive adjustments, making them useful for decision support.', 'uncertainty_awareness': 'The answer effectively distinguishes between evidence and uncertainty, clearly stating the limitations of the data and the need for adaptability in real-time.', 'evidence_use': 'While the answer mentions historical performance data, it does not explicitly cite the specific metrics or findings from the evidence package, which would strengthen its claims.'}",4.0
+1,Demo Ace,Demo Hitter Alpha,0,2,Build a pre-game attack plan and explain the evidence and limitations.,github,openai/gpt-4o-mini,agent_evidence,6503.37,"### Decision Brief
+
+**Pitcher:** Demo Ace  
+**Batter:** Demo Hitter Alpha  
+**Count:** 0-2  
+**Stand:** Right  
+
+---
+
+#### Plan A: Fastball in Chase Zone
+- **Pitch Family:** Fastball
+- **Zone Group:** Chase
+- **Sample Size (n):** 11
+- **Mean Value:** 0.0355
+- **Posterior Value:** -0.0377
+- **Whiff Rate:** 18.2%
+- **Hard Contact Rate:** 0.0%
+- **Confidence Level:** Insufficient
+
+#### Plan B: Fastball in Shadow Zone
+- **Pitch Family:** Fastball
+- **Zone Group:** Shadow
+- **Sample Size (n):** 13
+- **Mean Value:** -0.1008
+- **Posterior Value:** -0.0870
+- **Whiff Rate:** 15.4%
+- **Hard Contact Rate:** 38.5%
+- **Confidence Level:** Insufficient
+
+#### Avoid: Fastball in Heart Zone
+- **Pitch Family:** Fastball
+- **Zone Group:** Heart
+- **Sample Size (n):** 10
+- **Mean Value:** -0.2470
+- **Posterior Value:** -0.1343
+- **Whiff Rate:** 0.0%
+- **Hard Contact Rate:** 20.0%
+- **Confidence Level:** Insufficient
+
+---
+
+### Evidence Strength
+- All plans are based on empirical data with sample sizes below the threshold for strong confidence (n < 15). The evidence is categorized as insufficient, indicating a lack of robust predictive power.
+
+### Limitations
+- **Sample Size:** The small sample sizes for each plan limit the reliability of the estimates.
+- **Confidence Level:** All plans are marked as having insufficient confidence, suggesting that the outcomes are uncertain.
+- **Contextual Factors:** The analysis does not account for external factors such as game conditions, batter's recent performance, or pitcher fatigue, which could influence results.
+
+### Conclusion
+Given the insufficient confidence in all plans, it is advisable to proceed with caution. Plan A and Plan B may be considered for execution, but the avoidance of pitches in the Heart zone is strongly recommended due to the higher risk of hard contact. Further data collection and analysis are needed to improve decision-making in this matchup.",5,4,5,5,"{'groundedness': 'The answer accurately reflects the evidence provided without inventing facts, clearly stating the sample sizes and confidence levels for each plan.', 'actionability': 'The response gives actionable plans (A and B) while recommending avoidance of a specific pitch, though it could be more explicit about how to implement these plans in-game.', 'uncertainty_awareness': 'The answer effectively highlights the limitations of the evidence, particularly the insufficient sample sizes and confidence levels, demonstrating a strong awareness of uncertainty.', 'evidence_use': 'The candidate explicitly uses the supplied evidence package, detailing the statistics for each plan and acknowledging the limitations based on the evidence.'}",4.75
+2,Demo Ace,Demo Hitter Beta,1,1,"What should we prioritize in this matchup, and how confident should we be?",github,openai/gpt-4o-mini,direct_llm,2731.78,"### Decision Brief
+
+**Plan A:** Focus on exploiting Demo Hitter Beta's weaknesses against breaking balls. If Demo Ace has a strong curveball or slider, prioritize these pitches to induce weak contact or swings and misses.
+
+**Plan B:** If Demo Hitter Beta shows a tendency to adjust to breaking pitches, consider mixing in fastballs to keep him off balance. Monitor his swing tendencies closely to adapt pitch selection.
+
+**Avoid:** Do not rely heavily on fastballs if Demo Hitter Beta has a strong history against them. Avoid predictable pitch sequences that could allow him to time the pitches effectively.
+
+**Evidence Strength:** Moderate. The effectiveness of Demo Ace's pitches against Demo Hitter Beta is based on observed tendencies and general performance metrics, but specific matchup data is not provided.
+
+**Limitations:** Without detailed statistics on Demo Hitter Beta's performance against various pitch types or Demo Ace's recent performance trends, confidence in these strategies is limited. Adjustments should be made based on in-game observations.",4,5,4,3,"{'groundedness': 'The answer is mostly grounded in the evidence provided, particularly regarding the strengths and weaknesses of the pitcher and batter. However, it could be more precise in referencing specific metrics from the evidence package.', 'actionability': 'The response provides clear and actionable plans (A, B, and Avoid) that can be implemented during the game, making it highly actionable.', 'uncertainty_awareness': 'The answer acknowledges limitations and the need for in-game adjustments, demonstrating awareness of uncertainty in the matchup.', 'evidence_use': 'While the answer references the general performance metrics, it does not explicitly cite specific values or data points from the evidence package, which slightly lowers its score.'}",4.0
+2,Demo Ace,Demo Hitter Beta,1,1,"What should we prioritize in this matchup, and how confident should we be?",github,openai/gpt-4o-mini,rag_llm,3116.87,"### Decision Brief
+
+**Plan A:** Focus on optimizing pitcher matchups based on historical performance against the opposing team's lineup. Utilize data on pitch types and zones that have historically yielded favorable outcomes against similar hitters.
+
+**Plan B:** Prioritize defensive alignments and bullpen management. Analyze the opposing team's recent performance trends and adjust defensive strategies accordingly to mitigate their strengths.
+
+**Avoid:** Relying solely on anecdotal evidence or recent performance without considering historical data trends. Avoid making decisions based on small sample sizes or outlier performances.
+
+**Evidence Strength:** Moderate. The methodologies referenced (Scenario and Shadow Mode) provide a framework for analyzing historical data and making informed decisions based on empirical outcomes. However, the absence of specific matchup statistics limits the confidence in the recommendations.
+
+**Limitations:** The analysis is constrained by the lack of real-time data and specific matchup statistics. The methodologies do not account for all variables that could influence game outcomes, such as player health, weather conditions, or recent changes in player performance.",3,4,4,3,"{'groundedness': 'The answer references historical performance and methodologies, but lacks specific evidence from the provided data package, leading to a moderate score.', 'actionability': 'The response offers clear plans for action (Plan A and Plan B) that can be implemented, which supports a high score.', 'uncertainty_awareness': 'The answer acknowledges limitations and the need to avoid small sample sizes, demonstrating a good understanding of uncertainty.', 'evidence_use': 'While the answer mentions methodologies, it does not explicitly cite the specific evidence from the package, resulting in a moderate score.'}",3.5
+2,Demo Ace,Demo Hitter Beta,1,1,"What should we prioritize in this matchup, and how confident should we be?",github,openai/gpt-4o-mini,agent_evidence,6450.65,"### Decision Brief
+
+**Matchup Overview:**
+- **Pitcher:** Demo Ace
+- **Batter:** Demo Hitter Beta
+- **Count:** 1-1
+- **Batter Stand:** Right
+
+---
+
+**Plan A:**
+- **Pitch Family:** Breaking
+- **Zone Group:** Shadow
+- **Sample Size (n):** 9
+- **Mean Value:** 0.0167
+- **Posterior Value:** -0.0486
+- **Whiff Rate:** 22.2%
+- **Hard Contact Rate:** 11.1%
+- **Confidence Level:** Insufficient
+
+**Rationale:** The breaking pitch in the shadow zone has shown some potential for whiffs, but the overall confidence in this strategy is insufficient due to the small sample size.
+
+---
+
+**Plan B:**
+- **Pitch Family:** Fastball
+- **Zone Group:** Shadow
+- **Sample Size (n):** 15
+- **Mean Value:** -0.0980
+- **Posterior Value:** -0.0866
+- **Whiff Rate:** 0.0%
+- **Hard Contact Rate:** 26.7%
+- **Confidence Level:** Weak
+
+**Rationale:** The fastball in the shadow zone has a higher hard contact rate and no whiffs, indicating it may not be an effective choice, but it is still a viable option compared to the avoid strategy.
+
+---
+
+**Avoid:**
+- **Pitch Family:** Fastball
+- **Zone Group:** Heart
+- **Sample Size (n):** 7
+- **Mean Value:** -0.4371
+- **Posterior Value:** -0.1711
+- **Whiff Rate:** 0.0%
+- **Hard Contact Rate:** 42.9%
+- **Confidence Level:** Insufficient
+
+**Rationale:** The fastball in the heart zone has a very high hard contact rate and no whiffs, making it a poor choice against the batter.
+
+---
+
+**Evidence Strength:**
+- The evidence for Plan A is based on a small sample size with insufficient confidence, while Plan B has weak confidence due to a higher hard contact rate. The avoid strategy is supported by insufficient evidence but indicates a clear risk.
+
+**Limitations:**
+- Small sample sizes limit the reliability of the estimates.
+- The confidence levels for all plans are low, indicating uncertainty in the effectiveness of the proposed strategies.
+- The analysis is descriptive and does not imply causation.
+
+---
+
+**Conclusion:**
+Prioritize Plan A (breaking pitch in the shadow zone) as the primary strategy, while considering Plan B (fastball in the shadow zone) as a secondary option. Avoid the fastball in the heart zone due to high risk of hard contact. Confidence in these strategies is low, and further data would be beneficial for more robust decision-making.",5,5,5,5,"The candidate answer effectively uses the provided evidence to support its claims about the matchup. It clearly outlines the strengths and weaknesses of each pitching strategy, acknowledges the limitations due to small sample sizes, and provides actionable recommendations based on the analysis. The confidence levels are appropriately noted, demonstrating a strong awareness of uncertainty.",5.0
+3,Demo Ace,Demo Hitter Gamma,3,0,"Do we have enough evidence to recommend a plan, or should we abstain?",github,openai/gpt-4o-mini,direct_llm,3367.07,"**Decision Brief**
+
+**Pitcher:** Demo Ace  
+**Batter:** Demo Hitter Gamma  
+**Count:** 3-0  
+
+**Plan A:** If Demo Ace has a history of throwing strikes on 3-0 counts, consider pitching a fastball down the middle to challenge Demo Hitter Gamma, who may be expecting a more cautious pitch. This could lead to a favorable outcome if the batter is overly aggressive.
+
+**Plan B:** If Demo Ace has a tendency to walk batters on 3-0 counts, consider throwing a breaking ball or off-speed pitch to induce a swing-and-miss or a weak contact, minimizing the risk of a walk.
+
+**Avoid:** Throwing a fastball in the strike zone if Demo Hitter Gamma has a strong history of hitting well on 3-0 counts. This could lead to a high-risk situation for Demo Ace.
+
+**Evidence Strength:** Moderate. The decision is based on the general tendencies of pitchers and batters in 3-0 counts, but specific statistics for Demo Ace and Demo Hitter Gamma are not provided.
+
+**Limitations:** Without specific data on Demo Ace's performance on 3-0 counts and Demo Hitter Gamma's hitting tendencies in similar situations, the recommendations are based on general baseball strategy rather than tailored evidence. Further data would strengthen the analysis.",2,3,4,2,"{'groundedness': ""The answer references general strategies but lacks specific evidence from the provided data package regarding Demo Ace and Demo Hitter Gamma's performance on 3-0 counts."", 'actionability': 'The plans presented are somewhat actionable but are based on general tendencies rather than specific evidence, making them less reliable.', 'uncertainty_awareness': 'The answer acknowledges limitations and the need for more specific data, showing an awareness of uncertainty in the decision-making process.', 'evidence_use': 'The candidate answer does not explicitly cite the specific statistics or findings from the evidence package, which weakens its grounding in the provided data.'}",2.75
+3,Demo Ace,Demo Hitter Gamma,3,0,"Do we have enough evidence to recommend a plan, or should we abstain?",github,openai/gpt-4o-mini,rag_llm,3697.02,"**Decision Brief**
+
+**Plan A:** If sufficient comparable data exists (at least 35 observations), recommend a specific pitching strategy based on historical performance against similar matchups.
+
+**Plan B:** If data is limited (15-34 observations), suggest a conservative approach that emphasizes general best practices for the pitcher’s strengths and the opponent’s weaknesses without committing to a specific strategy.
+
+**Avoid:** Making definitive recommendations if fewer than 15 comparable observations are available, as this falls below the threshold for reliable decision-making.
+
+**Evidence Strength:** The strength of evidence is contingent on the number of comparable pitches available. If the sample size is below 15, the evidence is insufficient to support a recommendation.
+
+**Limitations:** The analysis is constrained by the availability of historical data and its relevance to the current matchup. Without adequate data, any proposed strategy may lack a solid foundation, leading to uncertainty in outcomes.",5,4,5,4,"{'groundedness': 'The candidate answer accurately reflects the evidence provided, particularly regarding the sample size thresholds for making recommendations.', 'actionability': 'The answer provides actionable plans based on the sample size, but could be clearer in specifying what to do in the case of insufficient data.', 'uncertainty_awareness': 'The response effectively communicates the limitations of the evidence and the importance of sample size in decision-making.', 'evidence_use': 'The answer references the evidence package well, but could improve by explicitly citing specific data points or findings from the evidence.'}",4.5
+3,Demo Ace,Demo Hitter Gamma,3,0,"Do we have enough evidence to recommend a plan, or should we abstain?",github,openai/gpt-4o-mini,agent_evidence,4812.41,"### Decision Brief
+
+**Plan A:**  
+- **Pitch Family:** Breaking  
+- **Zone Group:** Chase  
+- **Sample Size (n):** 11  
+- **Mean Value:** 0.0418  
+- **Posterior Value:** -0.0355  
+- **Whiff Rate:** 18.2%  
+- **Hard Contact Rate:** 9.1%  
+- **Confidence:** Insufficient  
+
+**Plan B:**  
+- **Pitch Family:** Fastball  
+- **Zone Group:** Chase  
+- **Sample Size (n):** 8  
+- **Mean Value:** 0.0525  
+- **Posterior Value:** -0.0407  
+- **Whiff Rate:** 12.5%  
+- **Hard Contact Rate:** 0.0%  
+- **Confidence:** Insufficient  
+
+**Avoid:**  
+- **Pitch Family:** Breaking  
+- **Zone Group:** Heart  
+- **Sample Size (n):** 6  
+- **Mean Value:** -0.3283  
+- **Posterior Value:** -0.1358  
+- **Whiff Rate:** 0.0%  
+- **Hard Contact Rate:** 33.3%  
+- **Confidence:** Insufficient  
+
+**Evidence Strength:**  
+- All plans are based on insufficient sample sizes (n < 15), leading to low confidence in the outcomes. The empirical data suggests variability and uncertainty in the effectiveness of the proposed strategies.
+
+**Limitations:**  
+- The sample sizes for both Plan A and Plan B are below the threshold for reliable decision-making. The observed data does not provide a strong basis for recommending a specific plan, and the avoidance strategy is based on a very limited dataset that indicates high risk.
+
+**Recommendation:**  
+- **Abstain from making a definitive recommendation.** The evidence is insufficient to support a confident decision regarding the best pitching strategy against Demo Hitter Gamma in the 3-0 count scenario.",5,5,5,5,"The candidate answer effectively summarizes the evidence provided, clearly states the limitations due to insufficient sample sizes, and appropriately recommends abstaining from a decision. Each plan is well-supported by the evidence, and the uncertainty is clearly articulated.",5.0
