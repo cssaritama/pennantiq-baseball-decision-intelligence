@@ -1,0 +1,2 @@
+# Confidence Policy
+PennantIQ must prefer abstention to unsupported certainty. Evidence strength combines sample size, recency, context similarity and stability. The public baseline labels fewer than 15 comparable pitches insufficient, 15–34 weak, 35–74 moderate and 75 or more strong. These thresholds are product defaults, not universal baseball truths. A team deployment must calibrate them with domain experts and private data.

@@ -1,0 +1,2 @@
+# Scenario Methodology
+The public Scenario Lab ranks pitch-family and zone combinations using empirical outcomes with Bayesian shrinkage toward a global prior. It estimates how similar historical situations performed. It is not a causal counterfactual and cannot prove what would have happened had a different pitch been thrown. The private roadmap includes off-policy evaluation, propensity modeling and sequential simulation.

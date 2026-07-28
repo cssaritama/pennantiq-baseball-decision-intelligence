@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="240" viewBox="0 0 800 240">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#0b1730"/><stop offset="1" stop-color="#04070d"/></linearGradient></defs>
+<rect width="800" height="240" rx="28" fill="url(#g)"/>
+<circle cx="115" cy="120" r="67" fill="none" stroke="#c9a86a" stroke-width="3"/>
+<path d="M54 143 C100 84 139 78 177 105" fill="none" stroke="#f4efe5" stroke-width="4"/>
+<path d="M59 96 C101 132 134 150 170 151" fill="none" stroke="#7998c8" stroke-width="3"/>
+<text x="218" y="118" fill="#f5f1e8" font-size="58" font-family="Arial, sans-serif" font-weight="700">PennantIQ</text>
+<text x="221" y="158" fill="#c9a86a" font-size="18" font-family="Arial, sans-serif" letter-spacing="4">DECISION INTELLIGENCE</text>
+</svg>

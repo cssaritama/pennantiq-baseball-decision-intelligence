@@ -1,0 +1,9 @@
+{
+  "organization_id": "demo-generic",
+  "display_name": "Demo Professional Club",
+  "market": "team",
+  "objective": "build a repeatable championship decision system",
+  "mode": "public_research",
+  "hero_case": false,
+  "notes": "Generic configuration used to prove PennantIQ is team-agnostic."
+}

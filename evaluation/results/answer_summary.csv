@@ -1,0 +1,4 @@
+method,has_plan,mentions_limitations,citation_count,abstention_capable,correct_abstention
+agent_with_evidence,0.6666666666666666,1.0,3.0,0.3333333333333333,1.0
+direct,0.0,0.0,0.0,0.0,0.6666666666666666
+rag,0.0,1.0,3.0,0.0,0.6666666666666666

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-label="PennantIQ Decision Council architecture">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071425"/><stop offset="1" stop-color="#02060c"/></linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#152943"/><stop offset="1" stop-color="#0a1422"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-opacity=".35"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#d2b06f"/></marker>
+  </defs>
+  <rect width="1400" height="760" rx="32" fill="url(#bg)"/>
+  <text x="70" y="70" fill="#d2b06f" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">PENNANTIQ · DECISION COUNCIL</text>
+  <text x="70" y="118" fill="#f5f1e8" font-family="Arial, sans-serif" font-size="34" font-weight="700">Specialists advise. Evidence can veto. Humans decide.</text>
+
+  <rect x="500" y="155" width="400" height="105" rx="22" fill="url(#card)" stroke="#38577f" filter="url(#shadow)"/>
+  <text x="700" y="198" text-anchor="middle" fill="#d2b06f" font-family="Arial" font-size="18" font-weight="700">CHIEF STRATEGY LAYER</text>
+  <text x="700" y="230" text-anchor="middle" fill="#b8c5d8" font-family="Arial" font-size="15">synthesis · conflict resolution · human-ready brief</text>
+
+  <g fill="url(#card)" stroke="#263f60">
+    <rect x="70" y="350" width="285" height="130" rx="20"/>
+    <rect x="390" y="350" width="285" height="130" rx="20"/>
+    <rect x="710" y="350" width="285" height="130" rx="20"/>
+    <rect x="1030" y="350" width="300" height="130" rx="20"/>
+  </g>
+  <g font-family="Arial" text-anchor="middle">
+    <text x="212" y="398" fill="#f5f1e8" font-size="18" font-weight="700">Pitching Strategy</text><text x="212" y="430" fill="#aeb9ca" font-size="14">matchup · count · zone</text><text x="212" y="454" fill="#aeb9ca" font-size="14">Plan A / B / Avoid</text>
+    <text x="532" y="398" fill="#f5f1e8" font-size="18" font-weight="700">Starter Pulse</text><text x="532" y="430" fill="#aeb9ca" font-size="14">recent form · rest</text><text x="532" y="454" fill="#aeb9ca" font-size="14">sparse-history control</text>
+    <text x="852" y="398" fill="#f5f1e8" font-size="18" font-weight="700">Context Intelligence</text><text x="852" y="430" fill="#aeb9ca" font-size="14">time × space × opponent</text><text x="852" y="454" fill="#aeb9ca" font-size="14">shrinkage · confounding</text>
+    <text x="1180" y="398" fill="#f5f1e8" font-size="18" font-weight="700">Opponent Adaptation</text><text x="1180" y="430" fill="#aeb9ca" font-size="14">observable shifts</text><text x="1180" y="454" fill="#aeb9ca" font-size="14">recency · stability</text>
+  </g>
+
+  <rect x="500" y="555" width="400" height="90" rx="20" fill="#1d1b18" stroke="#d2b06f"/>
+  <text x="700" y="590" text-anchor="middle" fill="#d2b06f" font-family="Arial" font-size="18" font-weight="700">EVIDENCE GATE</text>
+  <text x="700" y="618" text-anchor="middle" fill="#e9dfcd" font-family="Arial" font-size="14">approve · downgrade · abstain · require human review</text>
+
+  <rect x="500" y="682" width="400" height="55" rx="18" fill="#0d291f" stroke="#55c99a"/>
+  <text x="700" y="717" text-anchor="middle" fill="#eaf9f2" font-family="Arial" font-size="18" font-weight="700">HUMAN ANALYST / COACH OWNS THE DECISION</text>
+
+  <g stroke="#d2b06f" stroke-width="2" fill="none" marker-end="url(#arrow)" opacity=".9">
+    <path d="M700 260 L700 310 L212 310 L212 345"/>
+    <path d="M700 260 L700 345 L532 345"/>
+    <path d="M700 260 L700 345 L852 345"/>
+    <path d="M700 260 L700 310 L1180 310 L1180 345"/>
+    <path d="M212 480 L212 520 L700 520 L700 550"/>
+    <path d="M532 480 L532 520"/>
+    <path d="M852 480 L852 520"/>
+    <path d="M1180 480 L1180 520 L700 520"/>
+    <path d="M700 645 L700 677"/>
+  </g>
+</svg>

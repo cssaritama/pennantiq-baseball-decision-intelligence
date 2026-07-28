@@ -1,0 +1,12 @@
+name: Research idea
+description: Propose an evidence-based module or evaluation
+body:
+  - type: textarea
+    attributes: {label: User problem, description: What decision and user does this help?}
+    validations: {required: true}
+  - type: textarea
+    attributes: {label: Data and rights, description: Source, license, provenance and privacy}
+    validations: {required: true}
+  - type: textarea
+    attributes: {label: Evaluation, description: Time-aware test, metrics and expert validation}
+    validations: {required: true}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: PennantIQ
+type: software
+version: 0.1.0
+message: "If you use this research prototype, cite the repository release."
+authors:
+  - family-names: Saritama
+    given-names: Carlos
+repository-code: "https://github.com/cssaritama/pennantiq-baseball-decision-intelligence"
+license: Apache-2.0

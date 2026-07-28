@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="760" viewBox="0 0 1500 760">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#0d2341"/></linearGradient>
+    <linearGradient id="card" x1="0" x2="1"><stop stop-color="#122944"/><stop offset="1" stop-color="#0a1729"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-opacity=".28"/></filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#d2b06f"/></marker>
+  </defs>
+  <rect width="1500" height="760" rx="28" fill="url(#bg)"/>
+  <text x="72" y="80" fill="#d2b06f" font-family="Arial" font-weight="700" font-size="20" letter-spacing="4">PENNANTIQ TEAM · GCP TARGET ARCHITECTURE</text>
+  <text x="72" y="125" fill="#f5f1e8" font-family="Arial" font-weight="700" font-size="34">From licensed signals to governed decisions and organizational memory</text>
+
+  <g font-family="Arial" filter="url(#shadow)">
+    <g transform="translate(70 210)"><rect width="220" height="150" rx="20" fill="url(#card)" stroke="#39597f"/><text x="110" y="48" text-anchor="middle" fill="#d2b06f" font-size="18" font-weight="700">DATA SOURCES</text><text x="110" y="80" text-anchor="middle" fill="#f5f1e8" font-size="15">Statcast · Retrosheet</text><text x="110" y="106" text-anchor="middle" fill="#f5f1e8" font-size="15">Team tracking · Video</text><text x="110" y="132" text-anchor="middle" fill="#aeb9ca" font-size="14">Licensed / team-owned</text></g>
+    <g transform="translate(350 210)"><rect width="220" height="150" rx="20" fill="url(#card)" stroke="#39597f"/><text x="110" y="48" text-anchor="middle" fill="#d2b06f" font-size="18" font-weight="700">LANDING</text><text x="110" y="82" text-anchor="middle" fill="#f5f1e8" font-size="15">Cloud Storage</text><text x="110" y="108" text-anchor="middle" fill="#f5f1e8" font-size="15">Cloud Run Jobs / Dataflow</text><text x="110" y="132" text-anchor="middle" fill="#aeb9ca" font-size="14">Validation · lineage</text></g>
+    <g transform="translate(630 210)"><rect width="220" height="150" rx="20" fill="url(#card)" stroke="#39597f"/><text x="110" y="48" text-anchor="middle" fill="#d2b06f" font-size="18" font-weight="700">INTELLIGENCE CORE</text><text x="110" y="82" text-anchor="middle" fill="#f5f1e8" font-size="15">BigQuery · Dataform</text><text x="110" y="108" text-anchor="middle" fill="#f5f1e8" font-size="15">Features · vector search</text><text x="110" y="132" text-anchor="middle" fill="#aeb9ca" font-size="14">Time × space context</text></g>
+    <g transform="translate(910 210)"><rect width="220" height="150" rx="20" fill="url(#card)" stroke="#39597f"/><text x="110" y="48" text-anchor="middle" fill="#d2b06f" font-size="18" font-weight="700">DECISION ENGINE</text><text x="110" y="82" text-anchor="middle" fill="#f5f1e8" font-size="15">Vertex AI · tools</text><text x="110" y="108" text-anchor="middle" fill="#f5f1e8" font-size="15">Scenarios · abstention</text><text x="110" y="132" text-anchor="middle" fill="#aeb9ca" font-size="14">Human approval</text></g>
+    <g transform="translate(1190 210)"><rect width="240" height="150" rx="20" fill="url(#card)" stroke="#39597f"/><text x="120" y="48" text-anchor="middle" fill="#d2b06f" font-size="18" font-weight="700">EXPERIENCE</text><text x="120" y="82" text-anchor="middle" fill="#f5f1e8" font-size="15">Cloud Run API + UI</text><text x="120" y="108" text-anchor="middle" fill="#f5f1e8" font-size="15">War Room · dashboards</text><text x="120" y="132" text-anchor="middle" fill="#aeb9ca" font-size="14">Role-based briefs</text></g>
+  </g>
+
+  <g stroke="#d2b06f" stroke-width="3" fill="none" marker-end="url(#arrow)"><path d="M290 285 H340"/><path d="M570 285 H620"/><path d="M850 285 H900"/><path d="M1130 285 H1180"/></g>
+
+  <g font-family="Arial" filter="url(#shadow)">
+    <g transform="translate(330 470)"><rect width="350" height="155" rx="20" fill="#0c1c31" stroke="#2d4e78"/><text x="175" y="46" text-anchor="middle" fill="#d2b06f" font-size="18" font-weight="700">DECISION MEMORY</text><text x="175" y="80" text-anchor="middle" fill="#f5f1e8" font-size="15">Intention → evidence → choice</text><text x="175" y="106" text-anchor="middle" fill="#f5f1e8" font-size="15">Outcome → lesson → next plan</text><text x="175" y="133" text-anchor="middle" fill="#aeb9ca" font-size="14">BigQuery / Cloud SQL</text></g>
+    <g transform="translate(820 470)"><rect width="350" height="155" rx="20" fill="#0c1c31" stroke="#2d4e78"/><text x="175" y="46" text-anchor="middle" fill="#d2b06f" font-size="18" font-weight="700">TRUST & OPERATIONS</text><text x="175" y="80" text-anchor="middle" fill="#f5f1e8" font-size="15">IAM · Secret Manager · audit</text><text x="175" y="106" text-anchor="middle" fill="#f5f1e8" font-size="15">Logging · Monitoring · Looker</text><text x="175" y="133" text-anchor="middle" fill="#aeb9ca" font-size="14">Quality · cost · compliance</text></g>
+  </g>
+  <g stroke="#d2b06f" stroke-width="2.5" fill="none" marker-end="url(#arrow)"><path d="M1310 360 C1310 430 1080 425 1080 460"/><path d="M1020 360 C1020 410 995 430 995 460"/><path d="M1010 360 C900 420 680 400 600 460"/></g>
+  <text x="750" y="700" text-anchor="middle" fill="#aeb9ca" font-family="Arial" font-size="16">Public prototype proves the method. PennantIQ Team adds governed private data, integrations and organization-specific learning.</text>
+</svg>

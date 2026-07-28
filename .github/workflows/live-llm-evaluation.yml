@@ -1,0 +1,53 @@
+name: Live LLM Evaluation
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "evaluation/run_live_llm_evaluation.py"
+      - "src/pennantiq/agent.py"
+      - "src/pennantiq/llm_provider.py"
+      - "src/pennantiq/retrieval.py"
+      - "knowledge_base/**"
+      - ".github/workflows/live-llm-evaluation.yml"
+
+permissions:
+  contents: write
+  models: read
+
+jobs:
+  evaluate-live-llm:
+    runs-on: ubuntu-latest
+    env:
+      CI: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install evaluation dependencies
+        run: pip install -r requirements-dev.txt
+      - name: Run real LLM comparison through GitHub Models
+        env:
+          LLM_PROVIDER: github
+          GITHUB_MODELS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_MODELS_MODEL: openai/gpt-4o-mini
+        run: python evaluation/run_live_llm_evaluation.py
+      - name: Upload evaluation artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-llm-evaluation
+          path: evaluation/results/live_llm_github_*
+      - name: Commit reproducible evaluation results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add evaluation/results/live_llm_github_*
+          if git diff --cached --quiet; then
+            echo "No new LLM evaluation files to commit."
+          else
+            git commit -m "chore: record live LLM evaluation [skip ci]"
+            git push
+          fi

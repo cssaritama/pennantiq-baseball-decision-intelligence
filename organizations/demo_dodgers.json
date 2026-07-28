@@ -1,0 +1,9 @@
+{
+  "organization_id": "demo-lad",
+  "display_name": "Los Angeles Dodgers — dynasty benchmark",
+  "market": "benchmark",
+  "objective": "study repeat-champion performance patterns without claiming access to proprietary methods",
+  "mode": "public_research",
+  "hero_case": false,
+  "notes": "External benchmark only. PennantIQ does not claim to reproduce or know Dodgers proprietary systems."
+}

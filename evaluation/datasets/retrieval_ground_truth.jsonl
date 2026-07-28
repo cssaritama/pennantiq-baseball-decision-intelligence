@@ -1,0 +1,24 @@
+{"query":"When should PennantIQ refuse to recommend a strategy because the sample is too small?","relevant":"confidence_policy"}
+{"query":"What evidence strength does the system assign when fewer than 15 comparable pitches exist?","relevant":"confidence_policy"}
+{"query":"How are sample size, recency, context similarity and stability combined before making a recommendation?","relevant":"confidence_policy"}
+{"query":"How does Shadow Mode stop the model from learning from future games?","relevant":"shadow_mode_methodology"}
+{"query":"What information is allowed when replaying a historical decision date?","relevant":"shadow_mode_methodology"}
+{"query":"Why are followed versus non-followed Shadow Mode recommendations only associative?","relevant":"shadow_mode_methodology"}
+{"query":"Why is the Scenario Lab not a causal counterfactual engine?","relevant":"scenario_methodology"}
+{"query":"How does Bayesian shrinkage affect pitch-family and zone scenario rankings?","relevant":"scenario_methodology"}
+{"query":"Which advanced causal methods are deferred to the private roadmap?","relevant":"scenario_methodology"}
+{"query":"What exactly is preserved in the Trust Ledger for an analyst decision?","relevant":"trust_ledger"}
+{"query":"Where can I find model version, prompt version, filters and provenance for a recommendation?","relevant":"trust_ledger"}
+{"query":"How does PennantIQ make a decision auditable after the game?","relevant":"trust_ledger"}
+{"query":"Which Statcast fields describe pitch velocity, movement and plate location?","relevant":"data_dictionary"}
+{"query":"Why must 2026 plate-location coordinates be versioned separately from earlier seasons?","relevant":"data_dictionary"}
+{"query":"What pitch-level fields are useful for handedness, game state and contact quality?","relevant":"data_dictionary"}
+{"query":"How should a change in chase rate or whiff rate be interpreted as an adaptation signal?","relevant":"adaptation_signals"}
+{"query":"Do adaptation signals prove what a hitter is thinking or intending?","relevant":"adaptation_signals"}
+{"query":"Why should recent behavioral changes be reviewed alongside video and scouting context?","relevant":"adaptation_signals"}
+{"query":"Who is the first intended user of PennantIQ?","relevant":"product_definition"}
+{"query":"Is the current public product a complete championship digital twin?","relevant":"product_definition"}
+{"query":"Which workflows are included in the current Baseball Decision Intelligence prototype?","relevant":"product_definition"}
+{"query":"Can PennantIQ guarantee wins or autonomously coach during games?","relevant":"responsible_use"}
+{"query":"What is the allowed role of PennantIQ in pre-game research and post-game review?","relevant":"responsible_use"}
+{"query":"What should happen before any future in-game use of the system?","relevant":"responsible_use"}

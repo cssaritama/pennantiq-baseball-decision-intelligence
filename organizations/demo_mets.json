@@ -1,0 +1,9 @@
+{
+  "organization_id": "demo-nym",
+  "display_name": "New York Mets — public case study",
+  "market": "team",
+  "objective": "turnaround intelligence and decision learning",
+  "mode": "public_research",
+  "hero_case": false,
+  "notes": "Independent public-data case study. Not affiliated with or endorsed by the New York Mets."
+}

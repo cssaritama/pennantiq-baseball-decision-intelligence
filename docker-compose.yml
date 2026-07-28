@@ -1,0 +1,18 @@
+services:
+  pennantiq:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      DATA_MODE: ${DATA_MODE:-demo}
+      LLM_PROVIDER: ${LLM_PROVIDER:-mock}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      OPENAI_MODEL: ${OPENAI_MODEL:-gpt-5-mini}
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      GEMINI_MODEL: ${GEMINI_MODEL:-gemini-2.5-flash}
+      GITHUB_MODELS_TOKEN: ${GITHUB_MODELS_TOKEN:-}
+      GITHUB_MODELS_MODEL: ${GITHUB_MODELS_MODEL:-openai/gpt-4o}
+      PENNANTIQ_DATA_PATH: ${PENNANTIQ_DATA_PATH:-data/sample/demo_pitches.csv}
+    volumes:
+      - ./data/runtime:/app/data/runtime
+      - ./evaluation/results:/app/evaluation/results

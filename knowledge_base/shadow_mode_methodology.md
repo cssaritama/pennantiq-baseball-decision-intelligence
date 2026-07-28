@@ -1,0 +1,2 @@
+# Shadow Mode Methodology
+Shadow Mode replays historical dates chronologically. For each evaluation date, the system may use only observations timestamped before that date. It then records the recommended pitch family and zone, the observed decision and the observed outcome. This prevents future-data leakage. Differences between followed and non-followed recommendations remain associative because the historical decision was not randomized.

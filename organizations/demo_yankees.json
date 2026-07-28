@@ -1,0 +1,9 @@
+{
+  "organization_id": "demo-nyy",
+  "display_name": "New York Yankees — public case study",
+  "market": "team",
+  "objective": "championship-edge optimization",
+  "mode": "public_research",
+  "hero_case": true,
+  "notes": "Independent public-data case study. Not affiliated with or endorsed by the New York Yankees."
+}

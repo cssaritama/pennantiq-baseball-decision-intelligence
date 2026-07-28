@@ -1,0 +1,61 @@
+[
+  {
+    "source_id": "synthetic-demo-v02",
+    "name": "PennantIQ deterministic demo pitches",
+    "mode": "demo",
+    "grain": "pitch",
+    "coverage": "2025 synthetic season",
+    "status": "available",
+    "license": "MIT project fixture",
+    "included": true,
+    "purpose": "zero-configuration execution, tests and UI demonstration",
+    "limitations": "fictitious players and outcomes; never use for baseball claims"
+  },
+  {
+    "source_id": "new-york-results-2026-07-22",
+    "name": "Frozen New York recent results snapshot",
+    "mode": "frozen_real",
+    "grain": "game",
+    "coverage": "NYY and NYM final games, 2026-07-01 through 2026-07-21",
+    "status": "available",
+    "license": "factual result snapshot; verify downstream use",
+    "included": true,
+    "purpose": "real-data command-center example",
+    "limitations": "not pitch-level and not a substitute for licensed team data"
+  },
+  {
+    "source_id": "retrosheet-1898-2025",
+    "name": "Retrosheet parsed play-by-play and game logs",
+    "mode": "downloadable_real",
+    "grain": "play and game",
+    "coverage": "through 2025",
+    "status": "connector_ready",
+    "license": "commercial use permitted with mandatory attribution",
+    "included": false,
+    "purpose": "historical decisions, lineup, bullpen and game-state backtesting",
+    "url": "https://www.retrosheet.org/downloads/csvdownloads.html"
+  },
+  {
+    "source_id": "baseball-savant-statcast",
+    "name": "Baseball Savant Statcast CSV",
+    "mode": "downloadable_real",
+    "grain": "pitch",
+    "coverage": "2008-current; Statcast scale strongest from 2017",
+    "status": "connector_ready",
+    "license": "MLB terms apply; do not redistribute or commercialize without authorization",
+    "included": false,
+    "purpose": "pitch shape, location, results, bat tracking and matchup analysis",
+    "url": "https://baseballsavant.mlb.com/statcast_search"
+  },
+  {
+    "source_id": "gcp-enterprise",
+    "name": "Team-owned BigQuery data products",
+    "mode": "gcp",
+    "grain": "multi-domain",
+    "coverage": "organization-specific",
+    "status": "architecture_ready",
+    "license": "team-owned or licensed",
+    "included": false,
+    "purpose": "private production platform with governed features and decision memory"
+  }
+]

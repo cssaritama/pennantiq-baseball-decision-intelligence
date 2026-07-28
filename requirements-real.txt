@@ -1,0 +1,3 @@
+# Optional user-initiated real Statcast acquisition.
+# Baseball Savant/MLB terms apply to the underlying data.
+pybaseball==2.2.7

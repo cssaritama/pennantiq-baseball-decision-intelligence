@@ -1,0 +1,78 @@
+version: 0.1.0
+principle: "A module is implemented only when code, permitted data, tests, evaluation and an abstention rule exist."
+modules:
+  command_center:
+    status: implemented_baseline
+    release: public
+    decision: organization pulse and data health
+  starter_pulse:
+    status: implemented_baseline
+    release: public
+    decision: describe recent starter form and evidence
+  pitching_matchup:
+    status: implemented_baseline
+    release: public
+    decision: pitcher-batter pregame scenario
+  time_space_context:
+    status: implemented_baseline
+    release: public
+    decision: contextual split exploration with safeguards
+  shadow_mode:
+    status: implemented_baseline
+    release: public
+    decision: chronological historical validation
+  decision_memory:
+    status: implemented_baseline
+    release: public_method_private_team_data
+    decision: preserve intention, choice, outcome and lesson
+  bullpen_decisions:
+    status: roadmap
+    release: private_after_validation
+    data: pitch history, rest, usage, leverage, roster availability
+  lineup_optimization:
+    status: roadmap
+    release: private_after_validation
+    data: projections, handedness, health/availability, defense, opponent
+  offensive_approach:
+    status: roadmap
+    release: private_after_validation
+    data: swing decisions, pitch shapes, zones, game state
+  defense_positioning:
+    status: roadmap
+    release: private_after_validation
+    data: batted-ball, tracking, park and player positioning
+  baserunning:
+    status: roadmap
+    release: public_method_private_data
+    data: runner speed, catcher pop time, pitcher holds, game state
+  player_development:
+    status: research
+    release: private
+    data: minor-league tracking, coaching plans, video and biomechanics
+  roster_transactions:
+    status: research
+    release: private
+    data: projections, contracts, options, roster constraints
+  workload_signals:
+    status: suspended_high_risk
+    release: private_only
+    boundary: no diagnosis; medical/privacy governance required
+  umpire_abs_context:
+    status: roadmap_rule_dependent
+    release: public_method_private_data
+  integrity_governance:
+    status: roadmap
+    release: enterprise_private
+  fan_simulation_game:
+    status: optional_acquisition_surface
+    release: public_after_core_validation
+    boundary: educational simulation; not the commercial decision moat
+
+  decision_council:
+    status: implemented_baseline
+    release: public
+    decision: multi-specialist evidence synthesis with human approval
+  dynasty_benchmark:
+    status: roadmap_research
+    release: public_method
+    decision: compare repeat-champion public performance patterns without inferring private mechanisms

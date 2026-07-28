@@ -1,0 +1,8 @@
+{
+  "rows": 14252,
+  "coverage": 0.046660117878192534,
+  "followed_rate": 0.1289643558798765,
+  "observed_value_when_followed": 0.003645266594124051,
+  "observed_value_when_not_followed": -0.09236909940389881,
+  "warning": "Observed-value comparisons are associative, not causal. Selection effects and unobserved game context remain."
+}
