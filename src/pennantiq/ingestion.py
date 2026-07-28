@@ -1,28 +1,52 @@
-from __future__ import annotations
-
 from pathlib import Path
-import pandas as pd
+import dlt
 
 
-def run_pipeline(csv_path: str = "data/sample/demo_pitches.csv", destination: str = "duckdb"):
-    """Automated dlt ingestion used by the reproducible local workflow."""
-    import dlt
+def baseball_source():
+    """
+    Synthetic baseball decision dataset.
 
-    path = Path(csv_path)
-    if not path.exists():
-        raise FileNotFoundError(path)
+    This represents the ingestion layer that would
+    later connect to MLB APIs, Statcast, Baseball Savant,
+    internal scouting databases, and organizational data.
+    """
 
-    @dlt.resource(name="pitches", write_disposition="replace")
-    def rows():
-        for chunk in pd.read_csv(path, chunksize=1000):
-            yield from chunk.to_dict(orient="records")
+    rows = [
+        {
+            "player": "Example Pitcher",
+            "team": "New York",
+            "velocity": 96,
+            "strikeouts": 10,
+            "walks": 2,
+            "era": 2.85,
+            "context": "home_game"
+        },
+        {
+            "player": "Example Batter",
+            "team": "Opponent",
+            "average": 0.285,
+            "ops": 0.910,
+            "context": "night_game"
+        },
+    ]
+
+    yield rows
+
+
+def run_pipeline():
 
     pipeline = dlt.pipeline(
         pipeline_name="pennantiq",
-        destination=destination,
-        dataset_name="pennantiq",
+        destination="duckdb",
+        dataset_name="baseball_intelligence",
     )
-    return pipeline.run(rows())
+
+    load_info = pipeline.run(
+        baseball_source(),
+        table_name="game_context"
+    )
+
+    return load_info
 
 
 if __name__ == "__main__":
