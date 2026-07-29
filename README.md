@@ -16,7 +16,8 @@
 
 </div>
 
-![PennantIQ GCP architecture](assets/gcp-architecture.svg)
+--![PennantIQ GCP architecture](assets/gcp-architecture.svg)
+![PennantIQ GCP Architecture](assets/pennantiq-gcp-architecture.png)
 
 > **Independent research prototype.** PennantIQ is not affiliated with, endorsed by or sponsored by Major League Baseball or any MLB club. It does not guarantee wins, titles, medical outcomes or causal effects.
 
