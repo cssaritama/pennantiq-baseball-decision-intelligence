@@ -24,17 +24,21 @@
 
 ## Problem statement
 
-Professional baseball organizations do not have a shortage of data. They have a **decision-fragmentation problem**: pitch-level events, scouting methodology, opponent tendencies, contextual splits and human judgment often live in separate tools and workflows. Before a game or series, an analyst must turn that fragmented evidence into a plan quickly, while avoiding small-sample traps, future-data leakage and unsupported certainty. After the game, the original reasoning is often difficult to reconstruct, which weakens organizational learning.
+Professional baseball organizations have access to unprecedented amounts of data: pitch tracking, scouting reports, video, biomechanics, historical performance and contextual analysis. The challenge is no longer data availability. The challenge is transforming these complex and diverse signals into aligned, explainable and repeatable decisions under competitive pressure.
 
-The first PennantIQ user is an **Advance Scouting / Baseball Strategy Analyst** preparing pitcher–batter and starter decisions. The initial questions are deliberately concrete:
+Today, critical evidence often lives across separate tools, workflows and human expertise: pitch-level events, scouting methodology, opponent tendencies, contextual splits and organizational knowledge. Before a game or series, analysts and baseball operations teams must synthesize this fragmented evidence quickly while avoiding small-sample traps, future-data leakage and unsupported certainty. After the game, the original reasoning behind a decision is often difficult to reconstruct, limiting organizational learning and continuous improvement.
+
+PennantIQ addresses this decision-intelligence challenge by creating an evidence-gated system that connects data, analysis, human judgment and organizational memory.
+
+The first PennantIQ user is an **Advance Scouting Analyst or Baseball Strategy Analyst** preparing pitcher–batter and starter decisions. The initial questions are deliberately concrete:
 
 - How is this starter arriving relative to recent appearances?
-- What evidence supports Plan A, Plan B and what should be avoided?
+- What evidence supports each strategic option, and what scenarios present higher uncertainty or risk?
 - Does the answer change by handedness, venue, rest, count or other context?
-- Is the sample strong enough to recommend anything at all?
+- Is the available evidence strong enough to support a decision, or should uncertainty be explicitly communicated?
 - What did we know before the game, what did we choose, and what should we learn afterward?
 
-A generic chatbot is not enough because it can produce fluent answers without statistical provenance. A pure dashboard is not enough because it describes data without preserving the reasoning behind a decision. PennantIQ therefore treats the problem as an **evidence-gated decision-learning loop**.
+A generic chatbot is not enough because it can produce fluent answers without statistical provenance, context and decision traceability. A pure dashboard is not enough because it describes data without preserving the reasoning behind a decision. PennantIQ therefore treats the problem as an **evidence-gated decision-learning loop**.
 
 ### Success criteria for the public prototype
 
