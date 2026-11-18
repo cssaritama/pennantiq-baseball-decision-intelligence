@@ -15,7 +15,7 @@ To eliminate context contamination and maintain zero token waste, all agents ope
 | Operation Category | Permitted Files / Directories | Explicit Restrictions & Firewalls |
 |---|---|---|
 | **WHERE TO READ ON STARTUP**<br/>*(Max 4 Files Strictly)* | 1. `AGENTS.md`<br/>2. `STATUS.md`<br/>3. `README.md`<br/>4. Active module in `modules/` or `src/` | **NEVER** load full repository histories, unbounded Statcast dumps, or unindexed markdown on startup. |
-| **WHERE TO WRITE IDEAS & REFS**<br/>*(Local First, Global by Exception)* | **Local Project Repository (`pennantiq-baseball-decision-intelligence`):**<br/>- Decision models, sabermetric ideas stay in `IDEAS.md`<br/>- Benchmark papers, baseball references stay in `REFERENCES.md`<br/>*Classified by type:*<br/>`[SIGNAL_OR_MODEL]`, `[ARCHITECTURE_OR_PERF]`,<br/>`[PRODUCT_OR_UX]`, `[COMMERCIAL_OR_MONETIZATION]`<br/><br/>**Global by Exception (`portfolio-ops`):**<br/>- Tagged `[CROSS_PORTFOLIO_HQ]` in `portfolio-ops/IDEAS.md` or `REFERENCES.md` only after verifying zero duplicates.<br/>- If offline/detached, stage in local `## Outbox: Pending HQ Sync`. | **NEVER** dump high-volume pitch-by-pitch logs or raw Statcast telemetry into `portfolio-ops` HQ files.<br/>**NEVER** create duplicate entries without scanning existing IDs. |
+| **WHERE TO WRITE IDEAS & REFS**<br/>*(Local First, Global by Exception)* | **Local Project Repository (`pennantiq-baseball-decision-intelligence`):**<br/>- Decision models, sabermetric ideas stay in `IDEAS.md`<br/>- Benchmark papers, baseball references stay in `REFERENCES.md`<br/>*Classified by type:*<br/>`[SIGNAL_OR_MODEL]`, `[ARCHITECTURE_OR_PERF]`,<br/>`[PRODUCT_OR_UX]`, `[COMMERCIAL_OR_MONETIZATION]`<br/><br/>**Global by Exception (Systems Studio):**<br/>- Tagged `[CROSS_PORTFOLIO_HQ]` in `systems-studio-founder/IDEAS.md` or `systems-studio-innovation/REFERENCES.md` only after verifying zero duplicates.<br/>- If offline/detached, stage in local `## Outbox: Pending HQ Sync`. | **NEVER** dump high-volume pitch-by-pitch logs or raw Statcast telemetry into Systems Studio repositories.<br/>**NEVER** create duplicate entries without scanning existing IDs. |
 | **WHERE NOT TO READ**<br/>*(Context Contamination Firewall)* | **Strictly Forbidden:**<br/>`archive/`, `past_version/`, full raw Statcast data dumps (`data/`), or unrelated domain sibling repositories during routine execution. | Loading archived or inactive files causes prompt drift, hallucination, and massive token exhaustion. |
 
 ---
@@ -25,7 +25,7 @@ To eliminate context contamination and maintain zero token waste, all agents ope
 1. **Never a Passive Interrogator:** The system already maintains repository state (`STATUS.md`, `README.md`). Agents must NEVER dump blank questionnaires or leave decision-making open-ended to Carlos.
 2. **Proactive Option Synthesis:** When a front-office decision model, agentic arbitration trade-off, or optimization arises:
    - Synthesize current context automatically from state files.
-   - Run the **6 Structural Executive Validators (`SVED Protocol`)** defined in `portfolio-ops/architecture/STRUCTURAL_DECISION_AND_EXECUTION_PROTOCOL.md`.
+   - Frame the decision with the result statement and outcome framing of the Systems Studio Engineering Standard, and record a consequential choice in an ADR.
    - Present 2–3 concrete options scored by **`ITR` (Investment, Time, Return)**.
    - Proactively recommend **The Optimal Path & Why**, accompanied by an immediate physical action ready for one-word ("Sí") executive approval.
 3. **The Flashlight Rule:** Internal decision engines utilize structural models (Lacan R-S-I, Peirce's Quadrants, 11-Step Lifecycle) to maintain rigorous analytical clarity, while all external deliverables, code, and communications remain in crisp, minimalist, high-impact C-Suite American English with 10-word inline micro-bridges.
@@ -55,13 +55,13 @@ To eliminate context contamination and maintain zero token waste, all agents ope
 
 ---
 
-## 5. Master Single-Door Routing to Systems Studio HQ
+## 5. Routing to Systems Studio repositories
 
-Any universal engineering standard, C-Suite ontology update, or cross-project idea routes to Systems Studio HQ (`portfolio-ops`):
-- Cross-portfolio ideas → `portfolio-ops/IDEAS.md` (tagged `[CROSS_PORTFOLIO_HQ]`)
-- Shared engineering baselines → `portfolio-ops/architecture/SHARED_RULES_CANDIDATE.md`
-- Reusable agent roles & skills → `portfolio-ops/agents/AGENT_ROLES_AND_SKILLS_CATALOGUE.md` or `.agents/skills/`
-- External references → `portfolio-ops/REFERENCES.md`
+Any universal engineering standard, C-Suite ontology update, or cross-project idea routes to the Systems Studio repository that owns it:
+- Cross-portfolio ideas → `systems-studio-founder/IDEAS.md` (tagged `[CROSS_PORTFOLIO_HQ]`)
+- Shared engineering baselines → `systems-studio-standard/standard/SHARED_RULES_CANDIDATE.md`, changed only by pull request
+- Reusable agent roles & skills → `systems-studio-standard/standard/AGENT_ROLES_AND_SKILLS_CATALOGUE.md` or `.agents/skills/`
+- External references → `systems-studio-innovation/REFERENCES.md`
 
 ---
 
