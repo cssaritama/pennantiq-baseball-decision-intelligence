@@ -46,15 +46,6 @@ PennantIQ is independent and unaffiliated with both organizations.
 
 The 2024–2025 Los Angeles Dodgers are an external benchmark because repeat championships are rare. PennantIQ may study publicly observable repeat-champion patterns, but it must never claim to know, clone or reverse-engineer proprietary Dodgers processes.
 
-## Founder positioning
-
-Suggested professional headline:
-
-**AI Decision Systems Architect | Agentic AI · Data Intelligence · MLOps · High-Stakes Decision Support**
-
-Suggested portfolio statement:
-
-> I build systems that turn fragmented data into decisions people can challenge, trust and learn from.
 
 ## What not to say
 

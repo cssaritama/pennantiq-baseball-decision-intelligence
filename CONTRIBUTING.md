@@ -18,7 +18,7 @@ unless the change needs that evidence.
 
 Rules:
 
-- Valuation model promotion, contract arbitration updates and schema changes need recorded evidence: the test run and the backtest results.
+- Changes to scoring models and schemas need recorded evidence: the test run and the evaluation results.
 - `docs/standards/` is a verified copy of the Systems Studio Engineering Standard. Do not edit it; start specifications, decisions and verification records from `docs/standards/templates/`.
 - Work on a focused branch and open a pull request. Keep `main` working.
 
