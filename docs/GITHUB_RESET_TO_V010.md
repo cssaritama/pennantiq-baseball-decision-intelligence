@@ -12,7 +12,7 @@ Because PennantIQ is still at its initial public/certificate stage, a clean hist
 git clone https://github.com/cssaritama/pennantiq-baseball-decision-intelligence.git pennantiq-old-backup
 ```
 
-Keep that backup locally or in the private `pennantiq-internal` repository if you need historical notes. Do not copy Git history into the new public release.
+Keep that backup locally or in a private repository if you need historical notes. Do not copy Git history into the new public release.
 
 ### 2. Work from the v0.1.0 package
 
